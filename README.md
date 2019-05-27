@@ -17,15 +17,6 @@ In addition to the above, authorization was also implemented to only allow autho
 
 This application is currently live on: https://amansukhani-task-manager.herokuapp.com/
 
-Additionally, to run this in the development environment: 
-
-1. Download this repo
-2. cd into the root folder
-3. Run 'npm install' to install node modules
-4. To start up program execute 'npm run dev' (will run on port 3000) or to run tests execute 'npm tests'
-
-You can use either https://amansukhani-task-manager.herokuapp.com/ or localhost:3000 as your base url, depending on which enviornment you want to use the application.
-
 To use this application, you must install Postman or another API development platform. You can use the platform to make requests to the server with various methods that will be described in the next section. For this particular application, the four main requests are GET, POST, PATCH, and DELETE.
 
 # How To Use
@@ -39,8 +30,6 @@ This is what the response looks like when users request their profile:
 
 <img src = "images/View%20Profile.png">
 
-
-
 The task schema is built to include infromation about the user's task. The two main properties of the task schema are description (the actual task information) and completed (whether or not the task was completed). The task schema also includes a property called owner which references to the user that created the particular task. 
 
 This is what the response looks like when users request to view all of their tasks:
@@ -48,11 +37,9 @@ This is what the response looks like when users request to view all of their tas
 <img src = "images/View%20Tasks.png">
 
 
-
-
 ## Routes (API Reference)
 
-The routes that are supported by this application (base URL: https://amansukhani-task-manager.herokuapp.com/ or localhost:3000) include: 
+The routes that are supported by this application (base URL: https://amansukhani-task-manager.herokuapp.com/) include: 
 
 - POST: /users: creates a user if you supply a json object with name, email, and password in the body of the request
 
@@ -93,8 +80,3 @@ The JSON response that is generated should display task ID, owner ID, and other 
 
 
 <img src = "images/Create%20Task.png">
-
-
-
-
-
