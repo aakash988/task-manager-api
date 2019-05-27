@@ -1,4 +1,4 @@
-# Overview
+# Features
 This is a Task Manager API that was built using Node.JS, Express, and Mongo DB.
 
 The purpose of this project was to build the backend for a task manager application that gave users functionality to: 
@@ -17,12 +17,29 @@ In addition to the above, authorization was also implemented so that only author
 
 This application is currently live on: https://amansukhani-task-manager.herokuapp.com/
 
-To use this application, you must install Postman or another API development platform. You can use the platform to make requests to the server with various methods that will be described in the next section. For this particular application, the four main requests include GET, POST, PATCH, and DELETE.
-
-To make a request, you should ideally follow this pattern: 
+To use this application, you must install Postman or another API development platform. You can use the platform to make requests to the server with various methods that will be described in the next section. For this particular application, the four main requests are GET, POST, PATCH, and DELETE.
 
 
-# Features
+# How To Use
+
+## Schemas
+There are two main schemas that exist in this application: user and task
+
+The user schema is built to include general information about the user, which includes name, email, age etc. It is also used to store avatar buffer data and authorization information (not displayed to user). 
+
+This is what the response looks like when users request their profile: 
+
+
+
+The task schema is built to include infromation about the user's task. The two main properties of the task schema are description (the actual task information) and completed (whether or not the task was completed). The task schema also includes a property called owner which references to the user that created the particular task. 
+
+This is what the response looks like when users request to view all of their tasks:
+
+
+
+
+
+## Routes (API Reference)
 
 The routes that are supported by this application (base URL: https://amansukhani-task-manager.herokuapp.com/) include: 
 
@@ -53,3 +70,20 @@ The routes that are supported by this application (base URL: https://amansukhani
 - DELETE: /tasks/id: deletes the task based on the task id that was proivded by the user
 
 - DELETE: /users/me/avatar: deletes the user's avatar
+
+
+Before experimenting with all of the other routes, the user should create a profile and log in with the profile (first two bullet points above). This way, the user will be authenticated to access the other routes.
+
+
+### Example
+
+To create a task (fifth bullet point above), the user must set the request method to POST and use the route "/tasks". To create a task, th user must provide a JSON body in the request that has the completed and description fields populated. 
+The JSON response that is generated should display task ID, owner ID, and other useful information:
+
+
+
+
+
+
+
+
