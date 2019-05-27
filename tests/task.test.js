@@ -28,13 +28,6 @@ test('Should create task for user', async () => {
     expect(task.completed).toEqual(false)
 })
 
-//Goal: GET /tasks
-
-//1. Request all tasks for user one
-//2. Assert the correct status code
-//3. Check the length of the response array is 2
-//4. Test your work!
-
 test('Should send back all tasks for first user', async () => {
     const response = await request (app)
         .get('/tasks')
