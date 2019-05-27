@@ -24,32 +24,32 @@ To make a request, you should ideally follow this pattern:
 
 # Features
 
-The routes that are supported by this application include: 
+The routes that are supported by this application (base URL: https://amansukhani-task-manager.herokuapp.com/) include: 
 
-- POST: https://amansukhani-task-manager.herokuapp.com/users: creates a user if you supply a json object with name, email, and password in the body of the request)
+- POST: /users: creates a user if you supply a json object with name, email, and password in the body of the request
 
-- POST: https://amansukhani-task-manager.herokuapp.com/users/login: logs in the user based on the email and password that is provided in the body of the request. Log in also generates a token for authorization)
+- POST: /users/login: logs in the user based on the email and password that is provided in the body of the request. Log in also generates a token for authorization)
 
-- POST: https://amansukhani-task-manager.herokuapp.com/users/logout: logs the user out of the current session
+- POST: /users/logout: logs the user out of the current session
 
-- POST: https://amansukhani-task-manager.herokuapp.com/users/logoutAll: logs the user out of all sessions
+- POST: /users/logoutAll: logs the user out of all sessions
 
-- POST: https://amansukhani-task-manager.herokuapp.com/tasks: creates a task for the user if you supply a json object with a description field and completed field in the body of the request
+- POST: /tasks: creates a task for the user if you supply a json object with a description field and completed field in the body of the request
 
-- POST: https://amansukhani-task-manager.herokuapp.com/users/me/avatar: uploads an image if you supply an image in the body of the request using the form-data method with key "avatar"
+- POST: /users/me/avatar: uploads an image if you supply an image in the body of the request using the form-data method with key "avatar"
 
-- GET: https://amansukhani-task-manager.herokuapp.com/users/me: response displays information about the user, which includes age, name, and email.
+- GET: /users/me: response displays information about the user, which includes age, name, and email.
 
-- GET: https://amansukhani-task-manager.herokuapp.com/tasks: response displays all the tasks that the user has created. This method also supports query strings to sort and filter the response.
+- GET: /tasks: response displays all the tasks that the user has created. This method also supports query strings to sort and filter the response.
 
-- GET: https://amansukhani-task-manager.herokuapp.com/tasks/id: response displays information about the task that was requested with the task id
+- GET: /tasks/id: response displays information about the task that was requested with the task id
 
-- PATCH: https://amansukhani-task-manager.herokuapp.com/users/me: updates the current user's information based on the json that is provided in the body of the request.
+- PATCH: /users/me: updates the current user's information based on the json that is provided in the body of the request.
 
-- PATCH: https://amansukhani-task-manager.herokuapp.com/tasks/id: updates the task that was provided using the id based on the json that is provided in the body of the request.
+- PATCH: /tasks/id: updates the task that was provided using the id based on the json that is provided in the body of the   request.
 
-- DELETE: https://amansukhani-task-manager.herokuapp.com/users/me: deletes the current user/user information from the application
+- DELETE: /users/me: deletes the current user/user information from the application
 
-- DELETE: https://amansukhani-task-manager.herokuapp.com/tasks/id: deletes the task based on the task id that was proivded by the user
+- DELETE: /tasks/id: deletes the task based on the task id that was proivded by the user
 
-- DELETE: https://amansukhani-task-manager.herokuapp.com/users/me/avatar: deletes the user's avatar
+- DELETE: /users/me/avatar: deletes the user's avatar
