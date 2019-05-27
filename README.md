@@ -1,3 +1,4 @@
+# Overview
 This is a Task Manager API that was built using Node.JS, Express, and Mongo DB.
 
 The purpose of this project was to build the backend for a task manager application that gave users functionality to: 
@@ -8,4 +9,11 @@ The purpose of this project was to build the backend for a task manager applicat
 - Create, View, Update, and Delete tasks with respect to their own profile
 - Upload an avatar (profile picture)
 - Delete an avatar (profile picture)
+
+In addition to the above, authorization was also implemented so that only authorized users were able to perform certain actions in the application.
+
+
+
+
+
 
