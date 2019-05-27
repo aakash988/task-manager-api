@@ -81,7 +81,7 @@ To create a task (fifth bullet point above), the user must set the request metho
 The JSON response that is generated should display task ID, owner ID, and other useful information:
 
 
-
+<img src = "images/Create%20Task.png">
 
 
 
