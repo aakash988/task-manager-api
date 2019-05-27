@@ -31,10 +31,7 @@ test('Should signup a new user', async () => {
     expect(user.password).not.toBe('Mypass777')
 })
 
-//Goal: Validate new token is saved
-//1. Fetch the user from the database
-//2. Assert that oken in response matches users second token
-//3. Test your work!
+
 test('Should login existing user', async () => {
     const response = await request (app).post('/users/login').send({
         email: userOne.email,
@@ -118,33 +115,3 @@ test ('Should not update invalid user fields', async() => {
         })
         .expect(400)
 })
-
-
-
-//Goal: Test user updates
-
-//1. Create "Should update valid user fields"
-//  - Update the name of the test user
-//  - Check the data to confirm it's changed
-//2. Create "Should not update invalid user fields"
-//  - Update a location field and expect error status code
-//3. Test your work!
-
-
-//Goal: Test delete account
-//1. Create "Should delete account for user"
-//  - Setup auth header and expect correct status code
-//2. Create "Should not delete account for unauthenticated user"
-//  - Expect correct status code
-//3. Test your work!
-
-//Goal: Test login failure
-//1. Create "Should not login nonexistant user"
-//2. Send off the request with bad credentials
-//3. Expect the correct status response
-//4. Test your work
-
-//Goal: Validate user is removed
-//1. Fetch the user from the database
-//2. Assert null response (user assertion from signup test)
-//3. Test your work!
