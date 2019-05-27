@@ -29,12 +29,15 @@ The user schema is built to include general information about the user, which in
 
 This is what the response looks like when users request their profile: 
 
+<img src = "images/View%20Profile.png">
+
 
 
 The task schema is built to include infromation about the user's task. The two main properties of the task schema are description (the actual task information) and completed (whether or not the task was completed). The task schema also includes a property called owner which references to the user that created the particular task. 
 
 This is what the response looks like when users request to view all of their tasks:
 
+<img src = "images/View%20Tasks.png">
 
 
 
