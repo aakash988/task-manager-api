@@ -77,7 +77,7 @@ Before experimenting with all of the other routes, the user should create a prof
 
 ### Example
 
-To create a task (fifth bullet point above), the user must set the request method to POST and use the route "/tasks". To create a task, th user must provide a JSON body in the request that has the completed and description fields populated. 
+To create a task (fifth bullet point above), the user must set the request method to POST and use the route "/tasks". The user must also provide a JSON body in the request that has the completed and description fields populated. 
 The JSON response that is generated should display task ID, owner ID, and other useful information:
 
 
