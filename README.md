@@ -10,15 +10,23 @@ The purpose of this project was to build the backend for a task manager applicat
 - Upload an avatar (profile picture)
 - Delete an avatar (profile picture)
 
-In addition to the above, authorization was also implemented so that only authorized users were able to perform certain actions in the application.
+In addition to the above, authorization was also implemented to only allow authorized users to perform certain actions.
 
 
 # Usage/Installation
 
 This application is currently live on: https://amansukhani-task-manager.herokuapp.com/
 
-To use this application, you must install Postman or another API development platform. You can use the platform to make requests to the server with various methods that will be described in the next section. For this particular application, the four main requests are GET, POST, PATCH, and DELETE.
+Additionally, to run this in the development environment: 
 
+1. Download this repo
+2. cd into the root folder
+3. Run 'npm install' to install node modules
+4. To start up program execute 'npm run dev' (will run on port 3000) or to run tests execute 'npm tests'
+
+You can use either https://amansukhani-task-manager.herokuapp.com/ or localhost:3000 as your base url, depending on which enviornment you want to use the application.
+
+To use this application, you must install Postman or another API development platform. You can use the platform to make requests to the server with various methods that will be described in the next section. For this particular application, the four main requests are GET, POST, PATCH, and DELETE.
 
 # How To Use
 
@@ -44,7 +52,7 @@ This is what the response looks like when users request to view all of their tas
 
 ## Routes (API Reference)
 
-The routes that are supported by this application (base URL: https://amansukhani-task-manager.herokuapp.com/) include: 
+The routes that are supported by this application (base URL: https://amansukhani-task-manager.herokuapp.com/ or localhost:3000) include: 
 
 - POST: /users: creates a user if you supply a json object with name, email, and password in the body of the request
 
